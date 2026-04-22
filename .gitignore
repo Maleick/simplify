@@ -1,5 +1,5 @@
 .DS_Store
 *.log
 tmp/
-docs/superpowers/plans/2026-04-22-simplify-implementation.md
-docs/superpowers/specs/2026-04-22-simplify-design.md
+docs/superpowers/plans/*.md
+docs/superpowers/specs/*.md
