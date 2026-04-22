@@ -4,4 +4,6 @@ Use AutoShip when the task is issue/PR pipeline work, issue dispatch, verify-and
 
 simplify should hand off automatically when the task is clearly issue/PR pipeline orchestration.
 
-This boundary keeps autoship focused on orchestration work.
+This boundary keeps AutoShip focused on orchestration work.
+
+For OpenCode users, the `autoship` command remains the expected handoff entry point.
