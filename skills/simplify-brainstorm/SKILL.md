@@ -20,7 +20,7 @@ Generate options, compare tradeoffs, and narrow the design before code.
 - Provide 2-3 viable approaches.
 - Recommend one option and explain why.
 - Keep focus on the current decision.
-- When the task becomes deep, structured research and autoresearch is available, stop local brainstorming and hand it off.
+- When the task needs evidence gathering across multiple sources, repository-wide investigation, or more than a quick local comparison, and autoresearch is available, stop local brainstorming and hand it off.
 
 ## Boundaries
 
