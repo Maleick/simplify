@@ -2,7 +2,7 @@
 
 simplify is an OpenCode-first workflow package for code simplification, review, and brainstorming.
 
-Router skills:
+What it contains:
 - simplify
 - simplify-review
 - simplify-brainstorm
@@ -11,3 +11,5 @@ Router skills:
 - brainstormer
 
 Version 1 ships portable skills, agent definitions, and integration docs.
+
+Boundary: simplify does not replace AutoShip or AutoResearch and hands off when better matched.

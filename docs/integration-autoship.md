@@ -1,3 +1,7 @@
 # AutoShip Integration
 
-simplify hands off issue and PR orchestration tasks to AutoShip.
+Use AutoShip when the task is issue/PR pipeline work, issue dispatch, verify-and-PR flow, or continuous orchestration.
+
+simplify should hand off automatically when the task is clearly issue/PR pipeline orchestration.
+
+This boundary keeps autoship focused on orchestration work.

@@ -13,23 +13,12 @@ check_contains() {
   fi
 }
 
-for path in \
-  skills/simplify/SKILL.md \
-  skills/simplify-review/SKILL.md \
-  skills/simplify-brainstorm/SKILL.md \
-  agents/code-simplifier.md \
-  agents/reviewer.md \
-  agents/brainstormer.md
-do
-  if [ ! -e "$path" ]; then
-    printf 'missing: %s\n' "$path"
-    exit 1
-  fi
-done
+check_contains README.md 'OpenCode-first' 'README OpenCode-first text missing'
+check_contains docs/opencode-compatibility.md '~/.config/opencode/skills' 'OpenCode install path missing'
+check_contains docs/claude-compatibility.md 'no Claude plugin manifest' 'Claude packaging statement missing'
+check_contains docs/integration-autoship.md 'autoship' 'AutoShip integration text missing'
+check_contains docs/integration-autoship.md 'issue/PR pipeline' 'AutoShip boundary missing'
+check_contains docs/integration-autoresearch.md 'autoresearch' 'AutoResearch integration text missing'
+check_contains docs/integration-autoresearch.md 'deep structured research' 'AutoResearch boundary missing'
 
-check_contains agents/reviewer.md '^name: reviewer$' 'reviewer name missing'
-check_contains agents/reviewer.md 'findings-first' 'reviewer findings-first missing'
-check_contains agents/brainstormer.md '^name: brainstormer$' 'brainstormer name missing'
-check_contains agents/brainstormer.md '2-3 viable approaches' 'brainstormer options missing'
-
-printf 'reviewer and brainstormer agents ok\n'
+printf 'documentation ok\n'
