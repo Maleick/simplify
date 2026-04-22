@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Post-publication smoke test: intentionally checks published repo state via gh auth/network.
 set -eu
 
 git rev-parse --is-inside-work-tree >/dev/null 2>&1 || { echo 'git repo missing'; exit 1; }
