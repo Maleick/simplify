@@ -24,6 +24,16 @@ if ! grep -q 'autoresearch' skills/simplify-brainstorm/SKILL.md; then
   exit 1
 fi
 
+if ! grep -q 'Hand off to autoresearch automatically when available\.' skills/simplify-brainstorm/SKILL.md; then
+  printf 'autoresearch handoff unclear\n'
+  exit 1
+fi
+
+if ! grep -q 'deep, structured research' skills/simplify-brainstorm/SKILL.md; then
+  printf 'autoresearch trigger missing\n'
+  exit 1
+fi
+
 if ! grep -q '^name: code-simplifier$' agents/code-simplifier.md; then
   printf 'code-simplifier name missing\n'
   exit 1
@@ -31,6 +41,11 @@ fi
 
 if ! grep -q 'preserve functionality' agents/code-simplifier.md; then
   printf 'preserve functionality missing\n'
+  exit 1
+fi
+
+if ! grep -q '^- Preserve functionality exactly\.$' agents/code-simplifier.md; then
+  printf 'preserve functionality rule unclear\n'
   exit 1
 fi
 
