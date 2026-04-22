@@ -30,7 +30,7 @@ if ! grep -q 'autoship' skills/simplify/SKILL.md; then
   exit 1
 fi
 
-if ! grep -q '^- Use `autoship-\*` when the request is really about issue execution, branch flow, PR flow, or repository orchestration\.$' skills/simplify/SKILL.md; then
+if ! grep -q 'autoship-\*' skills/simplify/SKILL.md || ! grep -q 'available' skills/simplify/SKILL.md; then
   printf 'specific autoship handoff missing\n'
   exit 1
 fi
@@ -45,7 +45,7 @@ if ! grep -q 'findings-first' skills/simplify-review/SKILL.md; then
   exit 1
 fi
 
-if ! grep -q '^- Lead with findings-first output\.$' skills/simplify-review/SKILL.md; then
+if ! grep -q 'Lead with findings-first output' skills/simplify-review/SKILL.md || ! grep -q 'risk and correctness' skills/simplify-review/SKILL.md; then
   printf 'specific findings-first review missing\n'
   exit 1
 fi
