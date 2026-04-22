@@ -7,7 +7,7 @@ check_contains() {
   pattern=$2
   message=$3
 
-  if ! grep -q "$pattern" "$file"; then
+  if ! grep -Fq "$pattern" "$file"; then
     printf '%s\n' "$message"
     exit 1
   fi
