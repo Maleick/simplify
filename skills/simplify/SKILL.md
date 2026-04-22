@@ -27,4 +27,4 @@ Route the request to the narrowest correct workflow.
 
 - Do not re-implement AutoShip.
 - Do not re-implement AutoResearch.
-- Do not act like a memory package or MCP package.
+- Do not answer as if this skill can store memory, expose MCP tools, or proxy external packages; route to the correct skill or tool instead.
