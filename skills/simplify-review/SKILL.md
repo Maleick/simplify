@@ -19,7 +19,7 @@ Provide findings-first review output.
 
 - Lead with findings-first output.
 - Prioritize bugs, regressions, missing tests, and unclear assumptions.
-- Keep the review focused on risk and correctness before summaries.
+- Keep the review focused on concrete risks before any summary.
 
 ## Boundaries
 

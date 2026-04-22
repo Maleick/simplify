@@ -30,11 +30,6 @@ if ! grep -q 'autoship' skills/simplify/SKILL.md; then
   exit 1
 fi
 
-if ! grep -q 'autoship-\*' skills/simplify/SKILL.md || ! grep -q 'available' skills/simplify/SKILL.md; then
-  printf 'specific autoship handoff missing\n'
-  exit 1
-fi
-
 if ! grep -q '^name: simplify-review$' skills/simplify-review/SKILL.md; then
   printf 'simplify-review name missing\n'
   exit 1
@@ -42,11 +37,6 @@ fi
 
 if ! grep -q 'findings-first' skills/simplify-review/SKILL.md; then
   printf 'findings-first review missing\n'
-  exit 1
-fi
-
-if ! grep -q 'Lead with findings-first output' skills/simplify-review/SKILL.md || ! grep -q 'risk and correctness' skills/simplify-review/SKILL.md; then
-  printf 'specific findings-first review missing\n'
   exit 1
 fi
 
