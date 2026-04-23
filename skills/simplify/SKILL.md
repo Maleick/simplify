@@ -17,7 +17,7 @@ Route the request to the narrowest correct workflow.
 
 ## Routing Rules
 
-- Use `code-simplifier` for direct code simplification work when that skill is available in the current runtime.
+- Use `code-simplifier` agent for direct code simplification work when that agent is available in the current runtime.
 - Use `simplify-review` for findings-first review and risk-focused critique.
 - Use `simplify-brainstorm` for exploratory option generation before implementation when that skill is available in the current runtime.
 - Use `autoship-*` when the request is really about issue execution, branch flow, PR flow, or repository orchestration, and route there only when the relevant autoship skill is available in the current runtime.

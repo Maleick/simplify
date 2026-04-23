@@ -22,6 +22,7 @@ for path in \
   agents/reviewer.md \
   agents/brainstormer.md \
   README.md \
+  tests/verify-repo.sh \
   docs/opencode-compatibility.md \
   docs/claude-compatibility.md \
   docs/integration-autoship.md \
