@@ -12,4 +12,6 @@ What it contains:
 
 Version 1 ships portable skills, agent definitions, and integration docs.
 
+OpenCode project-local agent adapters live under `agent/`.
+
 Boundary: simplify does not replace AutoShip or AutoResearch and hands off when better matched.

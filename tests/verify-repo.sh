@@ -18,6 +18,9 @@ for path in \
   skills/simplify/SKILL.md \
   skills/simplify-review/SKILL.md \
   skills/simplify-brainstorm/SKILL.md \
+  agent/code-simplifier.md \
+  agent/simplify-reviewer.md \
+  agent/simplify-brainstormer.md \
   agents/code-simplifier.md \
   agents/reviewer.md \
   agents/brainstormer.md \

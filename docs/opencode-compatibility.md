@@ -13,3 +13,11 @@ ln -s "$PWD/skills/simplify-brainstorm" ~/.config/opencode/skills/simplify-brain
 ```
 
 Repo-owned agent markdown files are portable prompt assets and can be adapted into local custom agents as needed.
+
+For OpenCode project-local discovery, this repository also ships `agent/` adapters:
+
+- `agent/code-simplifier.md`
+- `agent/simplify-reviewer.md`
+- `agent/simplify-brainstormer.md`
+
+`simplify-reviewer` is namespaced deliberately so it does not collide with OpenCode's built-in `reviewer` agent.
